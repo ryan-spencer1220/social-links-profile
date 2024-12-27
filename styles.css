@@ -1,0 +1,72 @@
+:root {
+  --var-green: hsl(75, 94%, 57%);
+  --var-white: hsl(0, 0%, 100%);
+  --var-grey-700: hsl(0, 0%, 20%);
+  --var-grey-800: hsl(0, 0%, 12%);
+  --var-grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--var-grey-900);
+  color: var(--var-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", serif;
+}
+
+.card {
+  background-color: var(--var-grey-800);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.headshot {
+  width: 80px;
+  height: auto;
+  border-radius: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 14px;
+  color: var(--var-green);
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social p {
+  background-color: var(--var-grey-700);
+  padding: 10px;
+  border-radius: 6px;
+  margin: 12px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.social p:hover {
+  cursor: pointer;
+  background-color: var(--var-green);
+  color: var(--var-grey-900);
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    width: 300px;
+  }
+}
