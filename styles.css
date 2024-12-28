@@ -59,6 +59,11 @@ p {
   margin-bottom: 1.2rem;
 }
 
+p::selection {
+  background-color: var(--var-green);
+  color: black;
+}
+
 .social a {
   background-color: var(--var-grey-700);
   padding: 0.85rem;
