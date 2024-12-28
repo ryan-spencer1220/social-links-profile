@@ -19,43 +19,52 @@ body {
 .card {
   background-color: var(--var-grey-800);
   text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  width: 280px;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 18.75rem;
 }
 
 .headshot {
-  width: 80px;
+  width: 5rem;
   height: auto;
-  border-radius: 50px;
+  border-radius: 50%;
+  margin: 1rem;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 1.4em;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 0.8em;
   color: var(--var-green);
   font-weight: 700;
-  margin-top: 0px;
+  margin-bottom: 1.5rem;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
 }
 
 p {
-  font-size: 14px;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 0.85em;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
 }
 
-.social p {
+.social a {
   background-color: var(--var-grey-700);
-  padding: 10px;
-  border-radius: 6px;
-  margin: 12px 10px;
-  font-size: 12px;
+  padding: 0.85rem;
+  border-radius: 0.4rem;
+  font-size: 0.75em;
+  margin: 0.4rem 1.2rem;
   font-weight: 600;
 }
 
@@ -65,8 +74,6 @@ p {
   color: var(--var-grey-900);
 }
 
-@media screen and (min-width: 700px) {
-  .card {
-    width: 300px;
-  }
+.social:last-child {
+  margin-bottom: 1rem;
 }
